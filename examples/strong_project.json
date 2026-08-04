@@ -1,0 +1,11 @@
+{
+  "project_id": "example-strong-project",
+  "schema_version": "1.0.0",
+  "flags": {
+    "AI_0": 0, "AI_1": 1, "AI_2": 1, "AI_3": 1, "AI_4": 1,
+    "OC_1": 1, "OC_2": 1, "OC_3": 1,
+    "TK_0": 0, "TK_1": 1, "TK_2": 1, "TK_3": 0, "TK_4": 0,
+    "E_AI_T1": 1, "E_OC_T1": 1, "E_TK_T1": 1, "E_only_T3": 0
+  },
+  "last_verified_days": 120
+}

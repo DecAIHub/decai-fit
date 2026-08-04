@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://decaihub.io/schema/decai-fit-input/v1.0.0",
+  "title": "DecAI Fit Scoring Input",
+  "description": "Verified binary flag set derived from a project card during assessment; input format of the DecAI Fit reference scorer. Companion to the project-card schema (https://decaihub.io/schema/project-card/v1.0.0).",
+  "type": "object",
+  "required": ["project_id", "flags", "last_verified_days"],
+  "additionalProperties": false,
+  "properties": {
+    "project_id": {
+      "type": "string",
+      "description": "Unique identifier of the project card this flag set was derived from.",
+      "pattern": "^[a-z0-9][a-z0-9_-]*$"
+    },
+    "schema_version": {
+      "type": "string",
+      "const": "1.0.0",
+      "description": "Semantic version of this schema."
+    },
+    "flags": {
+      "type": "object",
+      "description": "Binary evidence flags. Every flag set to 1 must carry a recorded justification (source link + short fact) in the card's evidence entries.",
+      "required": [
+        "AI_0", "AI_1", "AI_2", "AI_3", "AI_4",
+        "OC_1", "OC_2", "OC_3",
+        "TK_0", "TK_1", "TK_2", "TK_3", "TK_4",
+        "E_AI_T1", "E_OC_T1", "E_TK_T1", "E_only_T3"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "AI_0": { "$ref": "#/$defs/bit", "description": "Tier-1 declaration of AI intent (roadmap/official update) without protocol-level AI evidence." },
+        "AI_1": { "$ref": "#/$defs/bit", "description": "What exactly the AI does is described." },
+        "AI_2": { "$ref": "#/$defs/bit", "description": "Working demos / examples exist." },
+        "AI_3": { "$ref": "#/$defs/bit", "description": "Quantitative metrics / benchmarks / quality assessments exist (see operational definition)." },
+        "AI_4": { "$ref": "#/$defs/bit", "description": "Technical description / architecture / model versions exist." },
+        "OC_1": { "$ref": "#/$defs/bit", "description": "Contracts / addresses / network exist." },
+        "OC_2": { "$ref": "#/$defs/bit", "description": "Onchain carries useful logic beyond the token (access/accounting/rules/DAO)." },
+        "OC_3": { "$ref": "#/$defs/bit", "description": "Onchain is critical: replace-the-chain test breaks the product." },
+        "TK_0": { "$ref": "#/$defs/bit", "description": "Token does not exist." },
+        "TK_1": { "$ref": "#/$defs/bit", "description": "Token pays for the service." },
+        "TK_2": { "$ref": "#/$defs/bit", "description": "Token is needed for incentives (rewards/staking/slashing)." },
+        "TK_3": { "$ref": "#/$defs/bit", "description": "Token is needed for governance (voting)." },
+        "TK_4": { "$ref": "#/$defs/bit", "description": "Token is replaceable (USDC/subscription would work) — subtracts from the token score." },
+        "E_AI_T1": { "$ref": "#/$defs/bit", "description": "Tier-1 evidence exists for the AI block." },
+        "E_OC_T1": { "$ref": "#/$defs/bit", "description": "Tier-1 evidence exists for the onchain block." },
+        "E_TK_T1": { "$ref": "#/$defs/bit", "description": "Tier-1 evidence exists for the token block." },
+        "E_only_T3": { "$ref": "#/$defs/bit", "description": "Sources are exclusively Tier-3 (marketing/rumors)." }
+      }
+    },
+    "last_verified_days": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Days since the card was last verified. Values above 550 trigger the staleness penalty."
+    }
+  },
+  "$defs": {
+    "bit": {
+      "type": "integer",
+      "enum": [0, 1]
+    }
+  }
+}

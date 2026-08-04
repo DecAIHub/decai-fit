@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use the DecAI Fit methodology or the reference scorer, please cite it as below."
+title: "DecAI Fit: Open Scoring Methodology and Reference Implementation for Verifying Decentralized-AI Claims of Crypto Projects"
+type: software
+authors:
+  - family-names: Kadochnikov
+    given-names: Nikita
+    orcid: "https://orcid.org/0009-0004-5996-7934"
+repository-code: "https://github.com/DecAIHub/decai-fit"
+url: "https://decaihub.io"
+license: MIT
+keywords:
+  - decentralized AI
+  - AI-washing
+  - verifiability
+  - blockchain
+  - evidence-based scoring
+references:
+  - type: data
+    title: "AI–Blockchain Project-Card Dataset"
+    authors:
+      - family-names: Kadochnikov
+        given-names: Nikita
+    doi: 10.5281/zenodo.18900950

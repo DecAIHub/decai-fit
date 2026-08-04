@@ -1,0 +1,11 @@
+{
+  "project_id": "example-weak-project",
+  "schema_version": "1.0.0",
+  "flags": {
+    "AI_0": 1, "AI_1": 0, "AI_2": 0, "AI_3": 0, "AI_4": 0,
+    "OC_1": 1, "OC_2": 0, "OC_3": 0,
+    "TK_0": 0, "TK_1": 0, "TK_2": 0, "TK_3": 0, "TK_4": 1,
+    "E_AI_T1": 0, "E_OC_T1": 0, "E_TK_T1": 0, "E_only_T3": 1
+  },
+  "last_verified_days": 90
+}
