@@ -10,8 +10,10 @@ This repository contains the **full scoring methodology** and a **deterministic 
 
 | Artifact | What it is | Where |
 |---|---|---|
-| **Registry** | Free public verification registry of AI-branded crypto projects | [decaihub.io](https://decaihub.io) |
-| **Dataset** | AI–Blockchain Project-Card Dataset v1.0.0 — 845 cards, 4,353 evidence entries (CC-BY 4.0) | [Zenodo, DOI 10.5281/zenodo.18900950](https://doi.org/10.5281/zenodo.18900950) |
+| **Registry** | Free public verification registry of AI-branded crypto projects | [decaihub.io](https://decaihub.io) · [project cards](https://decaihub.io/wiki/en/projects) |
+| **Methodology (reader's guide)** | DecAI Fit explained on the registry site | [DecAI Fit Metric](https://decaihub.io/wiki/en/decaihub-materials/decai-fit-metric) |
+| **Dataset** | AI–Blockchain Project-Card Dataset (ABPC) v1.1.0 - 845 cards, 4,371 evidence entries (CC BY 4.0) | [Zenodo, DOI 10.5281/zenodo.22800707](https://doi.org/10.5281/zenodo.22800707) |
+| **Data paper** | Peer-reviewed descriptor of the dataset | [IEEE Data Descriptions, DOI 10.1109/IEEEDATA.2026.3740408](https://doi.org/10.1109/IEEEDATA.2026.3740408) |
 | **Replication packages** | Code & materials for the peer-reviewed papers | [DecAIHub/papers](https://github.com/DecAIHub/papers) |
 | **Methodology + scorer** | This repository | you are here |
 
