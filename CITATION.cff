@@ -17,8 +17,17 @@ keywords:
   - evidence-based scoring
 references:
   - type: data
-    title: "AI–Blockchain Project-Card Dataset"
+    title: "AI–Blockchain Project-Card Dataset (ABPC)"
     authors:
       - family-names: Kadochnikov
         given-names: Nikita
-    doi: 10.5281/zenodo.18900950
+    version: 1.1.0
+    doi: 10.5281/zenodo.22800707
+  - type: article
+    title: "Descriptor: AI–Blockchain Project-Card Dataset (ABPC)"
+    authors:
+      - family-names: Kadochnikov
+        given-names: Nikita N.
+    journal: "IEEE Data Descriptions"
+    year: 2026
+    doi: 10.1109/IEEEDATA.2026.3740408
