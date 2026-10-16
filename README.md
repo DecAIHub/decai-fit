@@ -86,7 +86,7 @@ A project card carries binary flags in four blocks — **AI reality** (what the 
 
 ## Relationship to the published dataset
 
-The public dataset ([DOI 10.5281/zenodo.18900950](https://doi.org/10.5281/zenodo.18900950)) ships project cards conforming to the [project-card schema](https://github.com/DecAIHub/papers/tree/main/project-card-schema) (passport, links, tiered evidence entries). This repository adds the **scoring layer**: the input schema ([`schema/decai_fit_input.schema.json`](schema/decai_fit_input.schema.json)) describes the flag set derived from a card during verification, and the scorer turns those flags into the published 0–6 score. The production process from raw sources to flags is documented in [`methodology/pipeline.md`](methodology/pipeline.md).
+The public dataset ([DOI 10.5281/zenodo.22800707](https://doi.org/10.5281/zenodo.22800707), v1.1.0; all versions: concept DOI 10.5281/zenodo.18900949) ships project cards conforming to the [project-card schema](https://github.com/DecAIHub/papers/tree/main/project-card-schema) (passport, links, tiered evidence entries). This repository adds the **scoring layer**: the input schema ([`schema/decai_fit_input.schema.json`](schema/decai_fit_input.schema.json)) describes the flag set derived from a card during verification, and the scorer turns those flags into the published 0–6 score. The production process from raw sources to flags is documented in [`methodology/pipeline.md`](methodology/pipeline.md).
 
 ## Disclaimer
 
@@ -94,9 +94,13 @@ DecAI Fit and DecAIHub project pages evaluate the **verifiability and evidential
 
 ## Citing
 
-See [`CITATION.cff`](CITATION.cff). The dataset and methodology are described in the accompanying data paper (under review); until it is published, please cite the Zenodo deposit:
+See [`CITATION.cff`](CITATION.cff). The dataset is described in a peer-reviewed data paper:
 
-> Kadochnikov, N. (2026). *AI–Blockchain Project-Card Dataset* (v1.0.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.18900950
+> Kadochnikov, N. N. (2026). Descriptor: AI–Blockchain Project-Card Dataset (ABPC). *IEEE Data Descriptions*, 1–12. https://doi.org/10.1109/IEEEDATA.2026.3740408
+
+Dataset:
+
+> Kadochnikov, N. (2026). *AI–Blockchain Project-Card Dataset (ABPC)* (v1.1.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.22800707
 
 ## License
 
