@@ -97,7 +97,7 @@ DecAI Fit and DecAIHub project pages evaluate the **verifiability and evidential
 
 See [`CITATION.cff`](CITATION.cff). The dataset is described in a peer-reviewed data paper:
 
-> Kadochnikov, N. N. (2026). Descriptor: AI–Blockchain Project-Card Dataset (ABPC). *IEEE Data Descriptions*, 1–12. https://doi.org/10.1109/IEEEDATA.2026.3740408
+> Kadochnikov, N. N. (2026). Descriptor: AI–Blockchain Project-Card Dataset (ABPC). *IEEE Data Descriptions*, 3, 752–764. https://doi.org/10.1109/IEEEDATA.2026.3740408
 
 Dataset:
 
